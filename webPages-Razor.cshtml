@@ -1,0 +1,10 @@
+@{ var myMessage = "Hello world"}
+
+<p>the value of myMessage is : @myMessage</p>
+
+@{
+  var greeting = "Welcome to our site!";
+  var weekDay = "DateTime.Now.DayOfWeek";
+  var greetingMessage = greeting + "today is: " + weekDay;
+}
+<p>The greeting is : @greetingMessage</p>

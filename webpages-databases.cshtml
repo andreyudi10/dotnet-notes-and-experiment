@@ -1,0 +1,29 @@
+@{
+var db = Database.Open("SmallBakery");
+var query = "SELECT * FROM Product";
+}
+<html>
+<body>
+<h1>Small Bakery</h1>
+<table border="1" width="100%">
+    <tr>
+      <!-- th header tr row td apaan? jawabannya table cell -->
+      <!-- ceritanya dikasi styling gitu table cellnya -->
+      <th>Id</th>
+      <th>Product</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+
+    @foreach(var row in db.Query(query))
+    {
+    <tr>
+      <td>@row.Id</td>
+      <td>@row.Name</td>
+      <td>@row.Description</td>
+    </tr>
+    <td style="text-align:right">@row.Price</td>
+    }
+</table>
+</body>
+</html>

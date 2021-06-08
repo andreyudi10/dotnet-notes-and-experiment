@@ -1,0 +1,11 @@
+dotnet new webApp -o myWebApp --no-https
+
+cd myWebApp
+parameter webApp memilih template yang akan digunakan ketika membuat app
+parameter -o membuat directory bernama myWebApp dimana app dsimpan
+bendera --no-https menspesifikasi untuk disable https
+
+banyak file yang dibuat diantaranya
+- Startup.cs menampunt kode startup dan konfigurasi middleware
+- myWebApp/Pages menampung beberapa contoh web pages untuk aplikasi
+- myWebApp.csproja mendefinisikan library apakah yang direferensikan

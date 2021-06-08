@@ -1,0 +1,29 @@
+sebelum start up : _AppStart
+
+kebanyakan kode sampingan server ditulis dalam web pages individual
+contoh jika web page memilik form input, web page menampung kode server untuk pembacaan data
+
+namun dengan membuat halaman bernama _AppStart dalam root sitemum kamu akan memiliki startup kode dieksekusi sebelum site dimulai. jika halaman ada ASP.NET jalan pertama kali di tiap halaman dimana site diminta
+
+biasanya makenya begini
+_AppStart.cshtml
+
+peringatan: extension sama seperti webpages "cshtml" ada prefix _ akibatnya tak dapat di browse secara langsung
+
+# Sebelum tiap halaman _PageStart
+_AppStart buat mulai site, _PageStart buat mulai tiap halaman 
+untuk tiap folder di dalam web mu kamu bisa menambah file bernama _PageStart
+
+biasanya digunakan di seting halaman layout untuk semua halaman dalam folder atau memeriksa apakah user log in sebelum jalanin sebuah halaman
+
+request -> apakah _AppStart -----------> apakah _PageStart ------> Page requested (CSHTML)
+              |                                 |
+        request pertama?                    _PageStart
+              |
+          _AppStart
+           
+
+ketika request datang, ASP.NET memeriksa apakah _AppStart ada, jika iya maka request pertama ke site appstart jalan
+kemudian asp net memeriksa apakah page start ada jika iya page start jalan sebelum halaman requested
+jika menyertakan sebuah panggilan ke RunPage() di dalam _PageStart kamu menspesifikasi dimana kamu mau merequest halaman untuk jalan
+jika tidak _PageStart jalan sebelum halaman yang di request

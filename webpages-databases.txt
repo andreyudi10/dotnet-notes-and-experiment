@@ -1,0 +1,22 @@
+Menampilkan data dari database
+dengan web pages kamu bisa dengan mudah menampilkan data dari databse
+kamu dapat menghubungkan datase yang ada atau buat database dari nol
+untuk contoh yang ini menggunakan SQL Server Compact database
+# Menambahkan halaman Customers
+nanti coba tulis ASP.NET Database Object Reference
+yak sekarang saya tulis
+- Database.Execute(SQLStatement [,parameters]) 
+  Mengekseskusi SQLStatement (dengan parameter opsional) seperti INSERT, DELETE, atau UPDATE dan nge return sebuah coun dari record yang terpengaruh
+  (butuh contoh)
+- Database.GetLastInsertId()
+  Mereturn kolom identitas dari row yang paling baru/ baru aja dimasukin
+- Database.Open(filename)  
+- Database.Open(connectionStringName)
+  Membuka antara file database spesifik atau database spesifik menggunakan sebuah string koneksi bernama file Web.config
+- Database.OpenConnectionString(connectionString) 
+  Membuka sebuah database menggunakan string koneksi (ini membedakan dengan Database.Open yang mana menggunakan nama string)
+- Database.Query(SQLstatemant[,parameters])
+  Mengantrikan(mengquerikan) database menggunakan SQLstatement (secara optional passing parameter) dan nge return hasilnya sebagai kumpulan (collection)
+- Database.QuerySingle(SQLstatement[,parameters])
+  Executes SQLstatement (dengan parameter opsional) dan nge return sebuah record single
+- Database.QueryValue(SQLstatement[,parameters])

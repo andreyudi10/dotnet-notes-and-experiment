@@ -1,0 +1,16 @@
+@{
+var dataFile = Server.MapPath("~/App_Data/Persons.txt");
+Array userData = File.ReadAllLines(dataFile);
+}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Membaca data dari file</h1>
+@foreach (string dataline in userData)
+{
+  foreach (string dataItem in dataLine.Split(','))
+  {@dataItem <text>&nbsp;</text>}
+  <br />
+}
+</body>
+</html>

@@ -1,0 +1,29 @@
+ASP.NET Hekpers
+adalah komponen yang bisa diakses oleh line sing dari kode razor
+kamu dapat membangun helpermu sendiri menggunakan syntax razor yang disimpan sebagai file .cshtml
+atau menggunakan helper built-in ASP.NET
+apa sajakah itu?
+- Chart Helper 
+  Menampilkan data dari arra, database, maupun file
+- WebMail Helper
+  Menyediakan fungsi untuk mengirim pesan email menggunakan SMTP (Simple Mail Transfer Protocol)
+- WebImage Helper
+  Menyediakan fungsionalitas untuk mengelola image dalam web page
+  key: flip, rotate, resize, watermark
+Third Party Helper
+- Analytics (google)
+  Analytics.GetGoogleHtml(webPropertyId)
+  render kode js gugel analitik untuk ID spesifik
+
+  Analytics.GetStatCounterHtml(project, security)
+  render kode js analytic stat counter untuk project spesifik
+
+  Analytics.GetYahooHtml(account)
+  render kode js analytic yahoo untuk project spesifik
+- 
+- 
+- 
+- 
+- 
+- 
+- 

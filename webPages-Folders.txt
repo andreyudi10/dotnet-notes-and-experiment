@@ -1,0 +1,46 @@
+url digunakan untuk mengakses file dari web
+https://www.w3schools.com/html/html5_intro.asp
+
+utl berkorespondensi denga file fisik di server 
+C:\websiteku\w3schools\html\html5_intro.asp
+
+path virtual adalah kependekan dari path fisik
+jika menggunakan virtual path, kamu bisa menggerakkan halaman ke domain yang berbeda (atau server) tanpa harus mengupdate path.
+
+URL             https://www.w3schools.com/html/html5_intro.asp
+Server Name     w3schools
+Virtual path    /html/html5_intro.asp
+Physical path   C:\MyWebSites\w3schools\html\html5_intro.asp
+
+akar dari disk drive ditulis seperti \ namun root di web site adalah /
+
+path virtual dari folder web hampir tak pernah sama dengan folder fisik
+
+dalam kode kamu akan mereferensi path fisik dan path virtual tergantung dengan apa yang kamu koding
+
+ASP.NET mempunyai 3 alat untuk bekerja di path folder
+operator ~ , metode Server.MapPath, metode Href
+
+~ operator
+jika menggunakan operator ~, ketimbang path kamu akan berpindah website ke folder berbeda atau lokasi tanpa mengubah beberapa kode
+|----------------------------------------------|
+| var myImagesFolder = "~/images";             |
+| var myStyleSheet = "~/styles/StyleSheet.css" |
+|----------------------------------------------|
+
+metode Server.MapPath
+metode ini mengkonversi path virtual ke path fisik sehingga server bisa paham
+misal: 
+var pathName = "~/dataFile.txt";
+var fileName = Server.MapPath(pathName)
+
+metode href, digunakan untuk buat path ke resource seperti file images dan css
+
+|-----------------------------------------------------------------------|
+| @{var myStyleSheet = "~/Shared/Site.css";}                            |
+|                                                                       |
+| <link rel="stylessheet" type="text/css" href="@Href(myStyleSheet)" /> |
+|                                                                       |
+| < link rel="stylessheet" type="text/css" href="/Shared/Site.css" />   |
+|-----------------------------------------------------------------------|
+

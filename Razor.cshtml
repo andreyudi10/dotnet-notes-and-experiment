@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <!-- block statement single -->
+    @{ 
+    var myMessage = "Hello World"; 
+    }
+    
+    <!-- Ekspresi inline variabel -->
+    <p> nilai dari myMessage adalah: @myMessage </p>
+
+    <!-- block statement multi -->
+    @{
+    var greeting ="Welcome to our site!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var greetingMessage = greeting + " Disini di houston adalah: " + weekDay
+    }
+
+    <p>greetingnya adalah: @greetingMessage</p>
+
+
+  </body>
+</html>

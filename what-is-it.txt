@@ -1,0 +1,21 @@
+asp.net core adalah cross platform, performa tinggi, open source framework untuk membangun modern, clou-enabled, internet-connected apps.
+dengan asp bisa:
+buat web apps dan service, iot, dan back end mobile
+
+ia bekerja menggunakan implementasi http server yang mendengar http request
+server surface merequest app sebagai kumpulan fitur request yang terbentuk ke HttpContext
+
+asp.net core menyediakan implementasi server: Kestrel adalah web server yang cross platform
+
+berdasarkan wikipedia
+ia menyediakan library kelas besar bernama Framework Class Library dan menyediakan language interoperability sepanjang bahasa pemgrograman yang berbeda
+bisa pake c#, VB.NET Shop, C++, dan F#
+
+kalo aku mempelajari ini apa sajakah yang harus saya pelajari?
+
+1. bagaimana membangun full-sctack app menggunakan react dan .NET Core
+2. bagaimana menggunakan AutoMapper dan paket MediatR dalam proyek .NET
+3. bagaimana core framework entity digunakan sebagai alat ORM
+4. bagaimana mengimplentasi otentikasi menggunakan .NET core identity
+5. bagaimana menggunakan MobX sebagai library state management
+
